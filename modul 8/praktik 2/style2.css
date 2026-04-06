@@ -1,0 +1,24 @@
+.box1 {
+    width: 5cm;
+    height: 2cm;
+    background-color: lightblue;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 3px 3px black;
+}
+.box2 {
+    width: 50mm;
+    height: 20mm;
+    background-color: lightcoral;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 3px 3px black;
+}

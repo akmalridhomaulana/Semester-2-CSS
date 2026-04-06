@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #87ceeb;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 3  0px;
+            color: white;
+        }
+
+        .foto-container {
+            margin-top: 10px;
+        }
+
+        .foto-container img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
+            object-fit: cover;
+            box-shadow: 5px 5px 5px 5px rgb(78, 158, 190,0.5);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .foto-container img:hover {
+            background-color: #1565c0;
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        article {
+            background-color: white;
+            width: 100%;
+            max-width: 650px;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 5px 5px 5px 5px rgb(78, 158, 190,0.5);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        article p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .action-buttons button {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        
+
+        .action-buttons button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .info-grid {
+            background-color: white;
+            width: 100%;
+            max-width: 650px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 4px solid #b0b0b0;
+            padding: 20px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .info-column h3 {
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .info-grid:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .info-column ul {
+            padding-left: 25px;
+        }
+
+        .info-column li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+    </div>
+    <header>
+        <h1>Profil Saya</h1>
+        <div class="foto-container">
+            <img src="a1.jpeg" alt="Foto Profil">
+        </div>
+    </header>
+
+    <article>
+        <p>
+            Saya akmal ridho maulana saya seorang pelajar di SMK Negeri 1 Kandeman. Jurusan saya adalah 
+            Pengembangan Perangkat Lunak dan Gim. Saya memiliki hobi coding dan nge Game.
+        </p>
+        <div class="action-buttons">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>🔗 Share</button>
+        </div>
+    </article>
+
+    <article>
+        <p>
+            materi yang sudah saya pelajari di jurusan saya adalah HTML, CSS, dan 
+            C#. Saya sudah dapat membuat halaman web sederhana dan memahami 
+            dasar-dasar pemrograman ya meskipun sedikit sih.
+        </p>
+        <div class="action-buttons">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>🔗 Share</button>
+        </div>
+    </article>
+
+    <div class="info-grid">
+        <div class="info-column">
+            <h3>Skill</h3>
+            <ul>
+                <li>HTML (PEMULA)</li>
+                <li>CSS (PEMULA)</li>
+                <li>C# (PEMULA)</li>
+            </ul>
+        </div>
+        <div class="info-column">
+            <h3>Pengalaman</h3>
+            <ul>
+                <li>MEMBUAT TUGAS DAN PROJEK</li>
+                <li>MEMBUAT TUGAS DAN PROJEK</li>
+                <li>MEMBUAT TUGAS DAN PROJEK</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        AKMAL RIDHO MAULANA &copy; X PPLG 1
+    </footer>
+</body>
+</html>

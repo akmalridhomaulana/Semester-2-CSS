@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan box model</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            margin-bottom: 3em;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #0d47a1;
+            margin-bottom: 0.2em;
+        }
+
+        .button-cta {
+            display: inline-block;
+            margin: 0 10px 1em 10px;
+            padding: 0.7em 2em;
+            border-radius: 50px;
+            border: none;
+            background-color: #1e88e5;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .button-cta:hover {
+            background-color: #1565c0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        article {
+            border: 1px solid #bbdefb;
+            border-radius: 15px;
+            padding: 2em;
+            margin-bottom: 2em;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        article:hover {
+            border-color: #64b5f6;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .action-buttons {
+            margin-top: 1.5em;
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-buttons button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.6em 1.2em;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: 0.2s;
+        }
+
+        .action-buttons button:hover {
+            background-color: #e3f2fd;
+            border-color: #2196f3;
+            color: #1976d2;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3em;
+            color: #777;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Sederhana</h1>
+        <p>Contoh blog sederhana dengan model kotak</p>
+        <div>
+            <button class="button-cta">Masuk</button>
+            <button class="button-cta" style="background-color: #ff9800;">Daftar Sekarang</button>
+        </div>
+    </header>
+
+    <article>
+        <p>
+            <strong>Box model</strong>adalah model yang dipakai untuk menampilkan elemen HTML di browser. Model ini akan memudahkan kita mengatur ukuran, posisi, dan properti lainnya.
+        </p>
+        <div class="action-buttons">
+            <button>👍 Suka</button>
+            <button>💬 Komentar</button>
+            <button>🔗 Bagikan</button>
+        </div>
+    </article>
+
+    <article>
+        <p>
+            Dengan memahami model kotak, kita akan mudah mengatur ruang pada elemen. Ini berguna dalam membuat tata letak agar terlihat lebih rapi dan estetis.
+        </p>
+        <div class="action-buttons">
+            <button>👍 Suka</button>
+            <button>💬 Komentar</button>
+            <button>🔗 Bagikan</button>
+        </div>
+    </article>
+
+    <footer>
+        AKMAL RIDHO MAULANA &copy; X PPLG 1
+    </footer>
+</body>
+</html>
