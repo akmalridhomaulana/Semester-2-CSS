@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Scroll</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e3f2fd;
+            padding: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #0d47a1;
+            text-align: center;
+        }
+
+        div {
+            background-color: #bbdefb;
+            width: 250px;
+            height: 120px;
+            border: 2px solid #1976d2;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            overflow: scroll; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .description {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Overflow: Scroll</h2>
+
+    <div class="description">
+        <p>
+            Dengan mengatur nilai <b>overflow</b> menjadi <b>scroll</b>, konten yang melebihi ukuran kotak 
+            akan dipotong (clipped) dan sebuah <i>scrollbar</i> akan ditambahkan agar pengguna bisa menggeser isi kotak.
+        </p>
+        <p style="font-size: 0.9em; color: #666;">
+            *Catatan: Scrollbar akan muncul baik secara horizontal maupun vertikal, meskipun kontennya tidak membutuhkannya.
+        </p>
+    </div>
+
+    <div>
+        You can use the <b>overflow</b> property when you want to have better 
+        control of the layout. The overflow property specifies what happens 
+        if content overflows an element's box. It adds scrollbars both horizontally 
+        and vertically if you set it to scroll.
+    </div>
+</body>
+</html>

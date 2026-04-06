@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Visible</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #e3f2fd;
+            padding: 40px;
+            color: #333;
+        }
+
+        h2 {
+            color: #0d47a1;
+            text-align: center;
+        }
+
+        .isi {
+            background-color: #bbdefb;
+            width: 200px;
+            height: 65px;
+            border: 2px solid #1976d2;
+            border-radius: 8px;
+            padding: 15px;
+            overflow: visible; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .kotak {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .info {
+            margin-bottom: 20px;
+            max-width: 500px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Overflow: Visible</h2>
+
+    <p class="info">
+        Secara default, nilai overflow adalah <b>visible</b>. 
+        Artinya, konten tidak akan dipotong dan akan ditampilkan di luar kotak elemen jika ukurannya melebihi kapasitas kotak tersebut.
+    </p>
+
+    <div class="kotak">
+        <div class="isi">
+            You can use the <b>overflow</b> property 
+            when you want to have better control of the layout. 
+            The overflow property specifies what happens 
+            if content overflows an element's box.
+        </div>
+    </div>
+
+</body>
+</html>
