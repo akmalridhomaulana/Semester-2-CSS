@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Position Relative</title>
+    <style>
+        .box {
+            position: relative;
+            left: 30px;
+            top: 20px;
+            background-color: lightblue;
+            width: 150px;
+            height: 150px;
+            border-radius: 16px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0,0.5);
+            cursor: grab;
+            transition: all 0.3s;
+        }
+
+        .box:active {
+            transform: translateY(-15px);
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

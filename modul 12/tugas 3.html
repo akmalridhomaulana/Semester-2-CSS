@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 3</title>
+    <style>
+        .header-fixed {
+            text-align: center;
+            font-size: 200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-family: "noto sans", sans-serif;
+            background-image: url(f.jpg);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            animation: animate 20s linear infinite;
+        }
+
+        @keyframes animate {
+            to {
+                background-position-x: -500px;
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            height: 100px;
+            width: 150px;
+            bottom: 20px;
+            right: 900px;
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0,0.5);
+            cursor: grab;
+            transition: all 0.3s;
+        }
+
+        .back-to-top:active {
+            transform: translateY(-15px);
+            box-shadow: none;
+        }
+
+        .side-left {
+            position: fixed;
+            font-size: 100px;
+            left: 0;
+            top: 50%;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .side-left:active {
+            transform: translateX(-20px);
+        }
+
+        .side-right {
+            position: fixed;
+            font-size: 100px;
+            right: 0;
+            top: 50%;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .side-right:active {
+            transform: translateX(-20px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header-fixed">Selamat Datang</div>
+    
+    <div class="side-left"><</div>
+    <div class="side-right">></div>
+    
+    <a href="#" class="back-to-top"><p>Back</p></a>
+</body>
+</html>

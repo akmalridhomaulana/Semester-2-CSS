@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 2</title>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            left: 50px;
+            top: 40px;
+            background-color: #e3f2fd;
+            border: 2px solid #007bff;
+            border-radius: 16px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0,0.5);
+            cursor: grab;
+            transition: all 0.3s;
+        }
+        
+        .container:active {
+            transform: translateY(-15px);
+            box-shadow: none;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            color: white;
+            text-align: center;
+            line-height: 80px;
+            border-radius: 16px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0,0.5);
+            cursor: pointer;
+        }
+
+        .biru-gelap {
+            background-color: #2e18d7;
+            bottom: 0;
+            right: 0;
+        }
+
+        .biru-utama {
+            background-color: #007bff;
+            top: 0;
+            left: 0;
+        }
+
+        .biru-langit {
+            background-color: #4dabf7;
+            top: 0;
+            right: 0;
+        }
+
+        .biru-navy {
+            background-color: #2200ff;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box biru-utama"></div>
+        <div class="box biru-langit"></div>
+        <div class="box biru-navy"></div>
+        <div class="box biru-gelap"></div>
+    </div>
+</body>
+</html>

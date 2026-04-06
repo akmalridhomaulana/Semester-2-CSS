@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 1</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-family: sans-serif;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0,0.5);
+            cursor: grab;
+            transition: all 0.3s;
+        }
+
+        .box:active {
+            transform: translateY(-15px);
+            box-shadow: none;
+        }
+
+        .box1 {
+            position: relative;
+            left: 50px;
+            top: 40px;
+            background-color: #007bff;
+        }
+
+        .box2 {
+            position: relative;
+            left: 170px;
+            top: 40px;
+            background-color: #086eda;
+        }
+
+        .box3 {
+            position: relative;
+            left: 288px;
+            top: 40px;
+            background-color: #065eb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
