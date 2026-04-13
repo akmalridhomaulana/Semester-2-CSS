@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+.menu-utama {
+    background-color: #004a99;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgb(0, 86, 179,0.7) ;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.menu-utama li {
+    float: left;
+    position: relative;
+    width: 120px;
+    border-radius: 16px;
+}
+
+.menu-utama li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.menu-utama li:hover {
+    background-color: #267af8;
+}
+
+.dropdown {
+    background-color: #3399ff;
+    border-radius: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    min-width: 150px;
+    box-shadow: 5px 5px 5px rgb(51, 153, 255,0.5);
+}
+
+.dropdown li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown li a {
+    text-align: left;
+    padding: 12px 20px;
+}
+
+.menu-utama li:hover > .dropdown {
+    display: block;
+}
+
+.dropdown li:hover {
+    background-color: #0056b3;
+}

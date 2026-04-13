@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo urutan elemen</title>
+    <style>
+        li:first-child a {
+            color: green;
+        }
+        li:last-child a {
+            color: blue;
+        }
+        li:nth-child(3) a {
+            color: red;
+        }
+        li:nth-child(2n) a {
+            color: aqua;
+        }
+        li:nth-child(2n1) a {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="hello">hello word</a>
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="#">link 5</a></li>
+    </ul>
+</body>
+</html>
