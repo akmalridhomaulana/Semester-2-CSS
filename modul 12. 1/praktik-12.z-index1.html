@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktik-12.z-index1</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 16px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0,0.4);
+            transition: all 0.3s;
+        }
+
+        div:active {
+            width: 100px;
+            height: 100px;
+        }
+
+        .div1 {
+            background-color: salmon;
+        }
+
+        .div2 {
+            background-color: limegreen;
+        }
+
+        .div3 {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
